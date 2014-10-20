@@ -55,13 +55,14 @@ $(function() {
 				
 				
 				nav_container.css({ 'top':'', 'height':'' });
-				nav_container.stop().removeClass("sticky").css({'position':'absolute', "bottom":nav.outerHeight()+waypoint_offset}).animate({"bottom":"20"});
+				//nav_container.stop().removeClass("sticky").css({'position':'absolute', "bottom":nav.outerHeight()+waypoint_offset}).animate({"bottom":"20"});
+				
+				nav_container.stop().removeClass("sticky").css({'position':'absolute'}).animate({"top":top_spacing});
 			}
 		
 		},{
 		offset: '0%'
 	});
-	
 	
 		// Do our DOM lookups beforehand
 	//arrow

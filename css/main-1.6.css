@@ -142,8 +142,10 @@ body {
 
 .header-container {
     position:absolute;
-    bottom:30px;
+   // bottom:0px;
     width: 100%;
+    
+       top:1px;
     
     z-index: 10;
 }
@@ -152,9 +154,38 @@ body {
    padding-top:10px;
 }
 
+#right-heading {
+	text-align: right;
+	margin-left: 320px;
+
+}
+#left-heading {
+	
+    font-family:"futura_ltbook",Arial,sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    
+     display: block;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    white-space: nowrap;
+    outline: none;
+    
+    
+    
+	//width: 500px;
+	 float: left;
+	text-align: left;
+}
+
 #heading {
-	
-	
+	width: 100%; overflow: hidden;
     background: black;
     /* Fallback for web browsers that doesn't support RGBa */
     background: rgb(26, 120, 45);
@@ -314,10 +345,10 @@ body {
 
 section {
     text-align: left;
-    padding: 25px;
+   // padding: 25px;
     background-color: black;
     height: 100%;
-    margin-top: 50px;
+   // margin-top: 50px;
     color: white;
 
     -ms-border-radius: 8px;
@@ -327,13 +358,14 @@ section {
     border-radius: 8px;
 
     /* Fallback for web browsers that doesn't support RGBa */
-    background: rgb(26, 120, 45);
+   // background: rgb(26, 120, 45);
     /* RGBa with 0.7 opacity */
-    background: rgba(26, 120, 45, 0.7);
+ //   background: rgba(26, 120, 45, 0.7);
     /* For IE 5.5 - 7*/
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000);
+   // filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000);
     /* For IE 8*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000)";
+   // -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000)";
+ 
 }
 
 section h1 {
@@ -386,7 +418,8 @@ section h2 {
     /** get the transparent bar on the bottom **/
     .header-container {
         position:absolute;
-        bottom:30px;
+       // bottom:30px;
+       top:1px;
         width:100%;
         line-height:12px;
     }
@@ -482,7 +515,7 @@ box-sizing: border-box;
     }
 
     section {
-        padding: 40px 40px 70px 40px;
+       // padding: 40px 40px 70px 40px;
     }
     section h1 {
         font-size: 3.1em;
@@ -571,7 +604,11 @@ vertical-align: middle;
 text-align: center;
 box-sizing: border-box;
     }
-
+#left-heading {
+       
+        padding: 15px 2%;
+        font-size: 90%;
+    }
     nav a {
         padding: 15px 2%;
         font-size: 90%;
@@ -581,7 +618,7 @@ box-sizing: border-box;
 
     section h1,
     section h2 {
-        padding: 0 20px;
+       // padding: 0 20px;
     }
     section h1 {
         font-size: 5.9em;
@@ -610,14 +647,17 @@ box-sizing: border-box;
 /* ===============
     Maximal Width
    =============== */
-
+#left-heading {
+        padding: 15px 3%;
+        font-size: 120%;
+    }
     nav a {
         padding: 15px 3%;
         font-size: 120%;
     }
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+       // width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
 
