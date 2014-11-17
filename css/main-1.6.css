@@ -24,6 +24,12 @@ padding-top: 10px;
 margin-right: auto;
 margin-left: auto;
 }
+
+#vimeo
+{
+    width: 800px;
+    height: 450px;
+}
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
@@ -421,7 +427,15 @@ section h2 {
         padding: 15px 2%;
         font-size: 70%;
     }
+#vimeo
+{
+    width: 600px;
+    height: 338px;
 }
+
+}
+
+
 
 @media only screen and (min-width: 480px) {
 
@@ -446,7 +460,12 @@ section h2 {
         line-height:12px;
     }
     
-    
+    #vimeo
+{
+    width: 450px;
+    height: 253px;
+}
+   
 
     .header-container.sticky {
         position: fixed;
@@ -565,8 +584,38 @@ box-sizing: border-box;
     }
 }
 
+#left-heading {
+       
+        padding: 15px 2%;
+        font-size: 90%;
+    }
+    nav a {
+        padding: 15px 2%;
+        font-size: 60%;
+    }
+
 @media only screen and (min-width: 768px) {
 
+#vimeo
+{
+    width: 600px;
+    height: 338px;
+}
+
+#rsvpform
+{
+    width: 600px;
+}
+
+#left-heading {
+       
+        padding: 15px 2%;
+        font-size: 100%;
+    }
+    nav a {
+        padding: 15px 2%;
+        font-size: 69%;
+    }
 
     .photosection
 {
@@ -646,15 +695,7 @@ vertical-align: middle;
 text-align: center;
 box-sizing: border-box;
     }
-#left-heading {
-       
-        padding: 15px 2%;
-        font-size: 90%;
-    }
-    nav a {
-        padding: 15px 2%;
-        font-size: 70%;
-    }
+
 
 @media only screen and (min-width: 980px) {
 
@@ -663,6 +704,11 @@ box-sizing: border-box;
 
         background-color:transparent;
         height: 500px;
+}
+#vimeo
+{
+    width: 800px;
+    height: 450px;
 }
 
 .Savephotosection
@@ -734,10 +780,21 @@ box-sizing: border-box;
 {
     margin-top: -10px;
 }
+
+#vimeo
+{
+    width: 800px;
+    height: 450px;
+}
 }
 
 @media only screen and (min-width: 1153px) {
 
+#vimeo
+{
+    width: 800px;
+    height: 450px;
+}
 /* ===============
     Maximal Width
    =============== */
@@ -1124,5 +1181,43 @@ box-sizing: border-box;
         
     }
 
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    #rsvpform
+{
+    width: 450px;
+}
+
+ #right-heading{
+        margin-left: 0px;
+        text-align: left;
+
+    }
+#left-heading{
+    text-align: center;
+    float:none;
+      padding: 15px 2%;
+    font-size: 100%;
+
+    }
+
+    #vimeo
+{
+    width: 300px;
+    height: 450px;
+}
+
+    #left-heading {
+       
+        padding: 15px 2%;
+        font-size: 100%;
+    }
+    nav a {
+        padding: 15px 2%;
+        font-size: 100%;
+    }
 }
 
