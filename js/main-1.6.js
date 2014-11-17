@@ -97,7 +97,8 @@ $(function() {
 			{
 				duration: 1000,
 				offset: { 'left':0, 'top':-0.12*$(window).height() }
-			}
+			},
+			{'axis':'y'}
 		);
 			event.preventDefault();
 	});
