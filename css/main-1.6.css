@@ -3,6 +3,7 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
     font-weight: normal;
 }
 
+
 .text-center {
 text-align: center;
 }
@@ -408,6 +409,20 @@ section h2 {
    ========================================================================== */
 
 
+
+
+@media only screen and (min-width: 690px) {
+#left-heading {
+       
+        padding: 15px 2%;
+        font-size: 90%;
+    }
+    nav a {
+        padding: 15px 2%;
+        font-size: 70%;
+    }
+}
+
 @media only screen and (min-width: 480px) {
 
 /* ====================
@@ -552,6 +567,27 @@ box-sizing: border-box;
 
 @media only screen and (min-width: 768px) {
 
+
+    .photosection
+{
+
+        background-color:transparent;
+        height: 500px;
+}
+
+.Savephotosection
+{
+
+        background-color:transparent;
+        height: 480px;
+}
+
+#saveTheDateImg
+{
+    margin-top: 0px;
+}
+}
+
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
@@ -590,8 +626,8 @@ box-sizing: border-box;
 {
 
         background-color:transparent;
-        height: 900px;
 }
+
 
 .primary
 {
@@ -617,10 +653,40 @@ box-sizing: border-box;
     }
     nav a {
         padding: 15px 2%;
+        font-size: 70%;
+    }
+
+@media only screen and (min-width: 980px) {
+
+    .photosection
+{
+
+        background-color:transparent;
+        height: 500px;
+}
+
+.Savephotosection
+{
+
+        background-color:transparent;
+        height: 480px;
+}
+
+#saveTheDateImg
+{
+    margin-top: 0px;
+}
+
+#left-heading {
+        padding: 15px 3%;
+        font-size: 100%;
+    }
+
+    nav a {
+        padding: 15px 2%;
         font-size: 90%;
     }
-}
-@media only screen and (min-width: 900px) {
+
 
     section h1,
     section h2 {
@@ -648,7 +714,29 @@ box-sizing: border-box;
 }
 
 
-@media only screen and (min-width: 1140px) {
+
+@media only screen and (min-width: 1144px) {
+.photosection
+{
+
+        background-color:transparent;
+        height: 750px;
+}
+
+.Savephotosection
+{
+
+        background-color:transparent;
+        height: 680px;
+}
+
+#saveTheDateImg
+{
+    margin-top: -10px;
+}
+}
+
+@media only screen and (min-width: 1153px) {
 
 /* ===============
     Maximal Width
@@ -659,7 +747,7 @@ box-sizing: border-box;
     }
     nav a {
         padding: 15px 3%;
-        font-size: 120%;
+        font-size: 100%;
     }
 
     .wrapper {
