@@ -590,6 +590,7 @@ box-sizing: border-box;
 {
 
         background-color:transparent;
+        height: 900px;
 }
 
 .primary
@@ -938,7 +939,6 @@ box-sizing: border-box;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
-    height: 900px;
 }
 
 img.theinn  {
