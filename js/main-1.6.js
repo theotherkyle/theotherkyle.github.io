@@ -43,47 +43,6 @@ $(function() {
 	var top_spacing = 1;
 	var waypoint_offset = 1;
 
-	nav_container.waypoint(function(direction) {
-			
-				
-			if (direction == 'down') {
-							
-				nav_container.css({ 'height':nav.outerHeight(), 'position':'', 'bottom':''  });
-				nav_container.stop().addClass("sticky").css("top",-nav.outerHeight()).animate({"top":top_spacing});
-				
-			} else {
-				
-				
-				nav_container.css({ 'top':'', 'height':'' });
-				//nav_container.stop().removeClass("sticky").css({'position':'absolute', "bottom":nav.outerHeight()+waypoint_offset}).animate({"bottom":"20"});
-				
-				nav_container.stop().removeClass("sticky").css({'position':'absolute'}).animate({"top":top_spacing});
-			}
-		
-		},{
-		offset: '0%'
-	});
-	
-		// Do our DOM lookups beforehand
-	//arrow
-	var arrv_container = $("#arrow");
-		arrv_container.waypoint(function(direction) {
-						
-			if (direction == 'down') {
-				
-				arrv_container.css("opacity",1).animate({"opacity":0});
-				$('.main').animate({"padding-top":"65%"});
-				
-				
-			} else {
-				
-				arrv_container.css("opacity",0).animate({"opacity":1});
-				$('.main').animate({"padding-top":"75%"});
-			}
-			
-		},{
-		offset:'80%'
-	});
 	
 	var sections = $("section");
 	var navigation_links = $("#nav ul li a");
@@ -92,12 +51,14 @@ $(function() {
 		
 			var active_section;
 			active_section = $(this);
+			console.log(active_section.attr("id") );
+
 			if (direction === "up")
 			{	
 				if(!active_section.attr("id"))
 				{
 	
-					$("#brideandgroomLocationImg").css({'visibility':'visible', 'opacity':'1.0'}).animate({"opacity":"0.0"});;
+					$("#savethedateLocationImg").css({'visibility':'visible', 'opacity':'1.0'}).animate({"opacity":"0.0"});;
 				}
 				else
 				{
@@ -105,6 +66,8 @@ $(function() {
 				}
 
 				 active_section = active_section.prev();
+
+				console.log("active_section = " + active_section.attr("id") );
 								 
 			}
 			else
@@ -123,7 +86,7 @@ $(function() {
 
 		},
 		{
-		offset:'40%'
+		offset:'30%'
 	})
 	
 	
@@ -133,7 +96,7 @@ $(function() {
 			$(this).attr("href"),
 			{
 				duration: 1000,
-				offset: { 'left':0, 'top':-0.08*$(window).height() }
+				offset: { 'left':0, 'top':-0.12*$(window).height() }
 			}
 		);
 			event.preventDefault();
