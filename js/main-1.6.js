@@ -105,7 +105,11 @@ $(function() {
 	
 	navigation_links.click( function(event) {
 
+		console.log("on click");
 		console.log($(window).width());
+		console.log($(this).attr("href"));
+		console.log(-0.32*$(window).height() );
+
 			if ($(window).width() < 580)
 		{
 			$.scrollTo(
