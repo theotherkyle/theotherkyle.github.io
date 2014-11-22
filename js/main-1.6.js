@@ -40,6 +40,11 @@ $(window).resize(function(){
 	}
 	*/
 });
+$(function() {
+ $('figure.responsive-image').picture();
+
+});
+
 
 $(function() {
 
@@ -138,5 +143,4 @@ $(function() {
 			event.preventDefault();
 	});
 
-    $('figure.responsive-image').picture();
 });
