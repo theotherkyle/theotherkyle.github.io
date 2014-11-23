@@ -141,10 +141,10 @@ console.log("scroll");
 		console.log($(window).height());
 		console.log($(this).attr("href"));*/
 			$(window).scrollTo( 3500, 2000 );
-			
 
 
-console.log("scrollTo it");
+
+console.log("scrollTo it tw");
 
 /*
 
