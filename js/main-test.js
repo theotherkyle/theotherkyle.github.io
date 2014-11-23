@@ -1,59 +1,36 @@
-
-
-$(function() {
-    // When the document is loaded...
-$(document).ready(function()
-    {
- /*   
-console.log("ready 010");
-        // Scroll the whole document
- 
-       // Scroll the whole document
-        $('#box-links').localScroll({
-           target:'body'
-        });
-        // Scroll the content inside the #scroll-container div
-        $('#small-box-links').localScroll({
-           target:'#small-box-container'
-        });
- 
-   */
-
-
-/*
-$.scrollTo('#events',{
-					duration: 1000,
-					offset: { 'left':0, 'top':-0.12*$(window).height() },
-
-				});
-*/
-//$.scrollTo( '#events', 1000, {axis:'y'} );
-
-console.log("scrolled 010");
-});
-});
-/*
-$(function() {
-
-$("#nav ul li a").click( function(event) {
-
-console.log("scrolled click 010");
-	console.log($(this).attr("href")); 
-	$.scrollTo($(this).attr("href"),{
-					duration: 1000,
-					//offset: { 'left':0, 'top':-0.12*$(window).height() },
-				},{axis:'y'});
-	console.log("scrolled  010");
-	event.preventDefault();
-
-});
-
-});
-*/
-
 $.fn.test = function(){
 	if( location.search == '?notest' )
 		return this;
-
 	return this.scrollTo('max', 1000).scrollTo('#lastpart', 3000)
 };
+
+function assert( bool, message ){
+	if( !bool ){
+		alert('FAIL: ' + message);
+		throw new Error();
+	}
+};
+
+function f( name ){
+	return $(name)[0];
+}
+
+function testScrollable(){
+	
+	$.each([ window, document, f('body'), f('html') ], function(i, elem){
+		var s = $(elem)._scrollable();
+		assert( s.length == 1, 'scrollable must always return exactly 1 element' );
+		assert( s.is('html,body'), 'scrollable must either html or body for window scrolling' );
+	});
+		
+	$('body :not(iframe)').each(function(){
+		var s = $(this)._scrollable();
+		assert( s.length == 1, 'scrollable must always return exactly 1 element' );
+		assert( s[0] == this, 'scrollable must return the same element for normal element scrolling' );
+	});
+};
+
+$(function(){
+	if( location.search == '?notest' )
+		$('h1').hide();
+});
