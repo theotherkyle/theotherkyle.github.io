@@ -44,6 +44,9 @@ $(window).resize(function(){
 $(function() {
  $('figure.responsive-image').picture();
 
+ 
+			$.scrollTo( 3500, 2000 );
+
 });
 
 
@@ -137,14 +140,8 @@ console.log("scroll");
 		console.log($(window).width());
 		console.log($(window).height());
 		console.log($(this).attr("href"));*/
-				$.scrollTo(
-				'#accomodations'/*,
-				{
-					duration: 1000,
-					//offset: { 'left':0, 'top':-0.12*$(window).height() }
-				},
-				//{'axis':'y'}*/
-				);
+			$.scrollTo( 3500, 2000 );
+
 
 console.log("scrollTo it");
 
