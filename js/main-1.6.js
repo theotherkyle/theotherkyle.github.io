@@ -105,10 +105,6 @@ $(function() {
 	
 	navigation_links.click( function(event) {
 
-		console.log("on click");
-		console.log($(window).width());
-		console.log($(this).attr("href"));
-		console.log(-0.32*$(window).height() );
 
 			if ($(window).width() < 580)
 		{
@@ -135,6 +131,23 @@ $(function() {
 
 		else 
 			{
+				
+		console.log("on click");
+		console.log($(window).width());
+		console.log($(window).height());
+		console.log($(this).attr("href"));
+		console.log(-0.32*$(window).height() );
+				$.scrollTo(
+				'#accomodations'/*,
+				{
+					duration: 1000,
+					//offset: { 'left':0, 'top':-0.12*$(window).height() }
+				},
+				//{'axis':'y'}*/
+				);
+
+/*
+
 			$.scrollTo(
 				$(this).attr("href"),
 				{
@@ -143,6 +156,7 @@ $(function() {
 				},
 				{'axis':'y'}
 			);
+*/
 			}
 			event.preventDefault();
 	});
