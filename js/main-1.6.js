@@ -131,11 +131,11 @@ $(function() {
 
 		else 
 			{
-				
-		console.log("on click");
+console.log("scroll");
+	/*	console.log("on click");
 		console.log($(window).width());
 		console.log($(window).height());
-		console.log($(this).attr("href"));
+		console.log($(this).attr("href"));*/
 		console.log(-0.32*$(window).height() );
 				$.scrollTo(
 				'#accomodations'/*,
@@ -145,6 +145,8 @@ $(function() {
 				},
 				//{'axis':'y'}*/
 				);
+
+console.log("scrollTo");
 
 /*
 
@@ -158,7 +160,7 @@ $(function() {
 			);
 */
 			}
-			event.preventDefault();
+			//event.preventDefault();
 	});
 
 });
