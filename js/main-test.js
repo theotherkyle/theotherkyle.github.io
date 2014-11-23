@@ -1,6 +1,22 @@
 
+
 $(function() {
-console.log("scrolled 010");
+    // When the document is loaded...
+    $(document).ready(function()
+    {
+
+console.log("ready 010");
+        // Scroll the whole document
+ 
+ 
+        // Scroll the content inside the #scroll-container div
+        $('#small-box-links').localScroll({
+           target:'#small-box-container'
+        });
+ 
+    });
+
+
 /*
 $.scrollTo('#events',{
 					duration: 1000,
@@ -8,9 +24,11 @@ $.scrollTo('#events',{
 
 				});
 */
-$.scrollTo( '#events', 1000, {axis:'y'} );
+//$.scrollTo( '#events', 1000, {axis:'y'} );
 
+console.log("scrolled 010");
 });
+/*
 $(function() {
 
 $("#nav ul li a").click( function(event) {
@@ -27,3 +45,4 @@ console.log("scrolled click 010");
 });
 
 });
+*/
