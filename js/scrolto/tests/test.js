@@ -1,7 +1,7 @@
 $.fn.test = function(){
 	if( location.search == '?notest' )
 		return this;
-
+/*
 	testScrollable();
 	
 	$.scrollTo.defaults.axis = 'xy';
@@ -13,6 +13,7 @@ $.fn.test = function(){
 		'<br />' +
 		'scrolling the ' + this._scrollable().prop('nodeName')
 	);
+*/
 
 		/*var orig = [ $(window).scrollLeft(), $(window).scrollTop() ];
 		
@@ -25,7 +26,7 @@ $.fn.test = function(){
 		setTimeout(function(){
 			alert( elem.nodeName + ' ' + max );
 		}, 1000 );*/
-	return this.scrollTo('max', 1000).scrollTo('#lastpart', 1000)
+	return this.scrollTo('max', 1000).scrollTo('#lastpart', 3000)
 };
 
 function assert( bool, message ){
