@@ -1,4 +1,6 @@
 $.fn.test = function(){
+
+console.log("started 010");
 	if( location.search == '?notest' )
 		return this;
 	return this.scrollTo('max', 1000).scrollTo('#lastpart', 3000)

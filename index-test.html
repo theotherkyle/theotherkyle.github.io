@@ -1,163 +1,15 @@
-
-    <head>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-        <script src="http://jsconsole.com/remote.js?58D045D5-8026-4564-9237-8B4A28C744E3"></script>
- 
-        <script src="js/jquery-1.11.1.min.js"></script>
-        <script src="js/jquery.scrollTo.js"></script>
-
-        <script src="js/jquery.localScroll.min.js"></script>
-
-        <script src="js/main-test.js"></script>
-    <!-- Some CSS -->
-    <style type="text/css">
- 
-    /* CSS for the big boxes */
- 
-    .box {
-        width: 300px;
-        height: 300px;
- 
-        color: #fff;
-        padding: 10px;
- 
-        margin: 100px 0 0 0;
-    }
- 
-    #box1 {
-        margin: 300px 0 0 0;
-        background: blue;
-    }
- 
-    #box2 {
-        background: red;
-    }
- 
-    #box3 {
-        background: green;
-    }
- 
-    #box4 {
-        background: gray;
-    }
- 
-    /* CSS for the small boxes that will scroll inside a div */
- 
-    #small-box-container {
-        border: 1px solid black;
-        padding: 20px;
-        width: 300px;
-        height: 200px;
- 
-        overflow: scroll;
-    }
- 
-    .small-box {
- 
-        color: #fff;
-        padding: 10px;
- 
-        width: 200px;
-        height: 200px;
-        margin: 0 0 50px 0;
-    }
- 
-    #small-box1 {
-        background: blue;
-    }
- 
-    #small-box2 {
-        background: red;
-    }
- 
-    #small-box3 {
-        background: green;
-    }
- 
-    </style>
- 
-
-    </head>
-    <body>
-
-
-
-<div id="small-box-links">
- 
-    <a href="#small-box1">Link to small-box #1</a>
-    <a href="#small-box2">Link to small-box #2</a>
-    <a href="#small-box3">Link to small-box #3</a>
- 
-</div>
- 
-<div id="small-box-container">
-    <div id="small-box1" class="small-box">Small-Box #1</div>
-    <div id="small-box2" class="small-box">Small-Box #2</div>
-    <div id="small-box3" class="small-box">Small-Box #3</div>
-</div>
-
-
-
-<div id="box-links">
- 
-    <a href="#box1">Link to box #1</a>
-    <a href="#box2">Link to box #2</a>
-    <a href="#box3">Link to box #3</a>
-    <a href="#box4">Link to box #4</a>
- 
-</div>
- 
-<div id="box1" class="box">Box #1</div>
-<div id="box2" class="box">Box #2</div>
-<div id="box3" class="box">Box #3</div>
-<div id="box4" class="box">Box #4</div>
-
-        
-     
-  
-                    <nav id="nav">
-                        <ul>
-
-                            <li><a href="#savethedate">SAVE THE DATE</a></li>
-                            <li><a href="#3d">SAVE THE DATE - IN 3D</a></li>
-                            <li><a href="#brideandgroom">THE BRIDE &amp; GROOM</a></li>
-                             </ul> 
-                             <ul>
-                            <li><a href="#wedding">WEDDING</a></li>
-                            <li><a href="#events">EVENTS</a></li>
-                            <li><a href="#accomodations">ACCOMODATIONS</a></li>
-                            <li><a href="#registry">REGISTRY</a></li>
-                            <li><a href="#rsvp">RSVP</a></li>
-                         </ul>
-
-                    </nav>
-  
-
-
-       <div class="main wrapper clearfix">
-
-        <div id="weddingAnnounce" class="clearfix cleardiv" style="height: 550px" > weddingAnnounce </div>
-
-          <div id="savethedate" class="clearfix Savephotodiv" style="height: 550px">savethedate</div>
-            <div id="3d" class="clearfix photodiv" style="height: 550px">3d</div>      
-            <div id="brideandgroom" class="clearfix photodiv" style="height: 550px">brideandgroom</div>
-      
-                
-            <div id="wedding" class="clearfix photodiv"  style="height: 550px">wedding</div>
-       
-            <div id="events" class="clearfix photodiv"  style="height: 550px">events</div>
-           
-            <div id="accomodations" class="clearfix photodiv"  style="height: 550px">accomodations</div>
-           
-            <div id="registry" class="clearfix photodiv"  style="height: 550px">registry</div>
-         
-                </div> <!-- #main -->
-
-
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>jQuery.ScrollTo</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="../jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+</head>
+<body>
     <h1>jQuery.ScrollTo - Test Window MaxY - Compat Mode</h1>
+    
     <div style="height:1500px; width:500px; padding:0 50px; background-color:#AAA">
         &nbsp;
     </div>
@@ -171,9 +23,7 @@
                     <div style="height:1500px; width:500px; padding:0 50px; background-color:#FFF">
         &nbsp;
     </div>
-        <script type="text/javascript">
+    <script type="text/javascript">
         $(window).test();
-         </script>
-
-    </body>
+    </script>
 </html>
