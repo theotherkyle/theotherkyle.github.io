@@ -2,9 +2,9 @@
 
 $(function() {
     // When the document is loaded...
-    $(document).ready(function()
+$(document).ready(function()
     {
-
+ /*   
 console.log("ready 010");
         // Scroll the whole document
  
@@ -17,7 +17,7 @@ console.log("ready 010");
            target:'#small-box-container'
         });
  
-    });
+   */
 
 
 /*
@@ -30,6 +30,7 @@ $.scrollTo('#events',{
 //$.scrollTo( '#events', 1000, {axis:'y'} );
 
 console.log("scrolled 010");
+});
 });
 /*
 $(function() {
@@ -53,6 +54,6 @@ console.log("scrolled click 010");
 $.fn.test = function(){
 	if( location.search == '?notest' )
 		return this;
-	
+
 	return this.scrollTo('max', 1000).scrollTo('#lastpart', 3000)
 };
