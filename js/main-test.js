@@ -1,8 +1,31 @@
 $.fn.test = function(){
-
-console.log("started 010");
 	if( location.search == '?notest' )
 		return this;
+/*
+	testScrollable();
+	
+	$.scrollTo.defaults.axis = 'xy';
+	
+	this._scrollable().find('div').html(
+		navigator.userAgent +
+		'<br />' +
+		'document.compatMode is "' + document.compatMode + '"' +
+		'<br />' +
+		'scrolling the ' + this._scrollable().prop('nodeName')
+	);
+*/
+
+		/*var orig = [ $(window).scrollLeft(), $(window).scrollTop() ];
+		
+		scrollTo(0,1);
+		var elem = document.documentElement.scrollTop ? document.documentElement : document.body;
+		scrollTo(0,9e9);
+		var max = $(window).scrollTop();			
+		scrollTo(orig[0],orig[1]);
+		
+		setTimeout(function(){
+			alert( elem.nodeName + ' ' + max );
+		}, 1000 );*/
 	return this.scrollTo('max', 1000).scrollTo('#lastpart', 3000)
 };
 
