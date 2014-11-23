@@ -29,7 +29,7 @@ $(function() {
  //$('figure.responsive-image').picture();
 
 //$.scrollTo( 3500, 2000 );
-console.log("scrolled 005");
+console.log("scrolled 006");
 
 });
 
