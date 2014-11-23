@@ -160,7 +160,7 @@ console.log("scrollTo it");
 			);
 */
 			}
-			//event.preventDefault();
+		event.preventDefault();
 	});
 
 });
