@@ -8,7 +8,7 @@ $(window).resize(function(){
 	*/
 });
 $(function() {
- //$('figure.responsive-image').picture();
+ $('figure.responsive-image').picture();
 
 //$.scrollTo( 3500, 2000 );
 console.log("scrolled 006");
@@ -75,7 +75,18 @@ $(function() {
 	navigation_links.click( function(event) {
 
 
-			if ($(window).width() < 580)
+			if ($(window).width() < 480)
+		{
+			$.scrollTo(
+			$(this).attr("href"),
+			{
+				duration: 1000,
+				//offset: { 'left':0, 'top':-0.32*$(window).height() }
+			},
+			{'axis':'y'}
+		);
+		}
+			else if ($(window).width() < 580)
 		{
 			$.scrollTo(
 			$(this).attr("href"),

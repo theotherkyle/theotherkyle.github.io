@@ -1184,6 +1184,8 @@ box-sizing: border-box;
 }
 
 
+
+
 @media only screen and (max-width: 700px) {
 
     #rsvpform
@@ -1219,5 +1221,19 @@ box-sizing: border-box;
         padding: 15px 2%;
         font-size: 100%;
     }
+}
+@media only screen and (max-width: 500px) {
+
+    #rsvpform
+    {
+         width: 350px;
+         left:-100px;
+         margin-left: -10px;
+    }
+   
+.main {
+    padding: 700px 0;
+}
+
 }
 
