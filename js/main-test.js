@@ -8,7 +8,10 @@ $(function() {
 console.log("ready 010");
         // Scroll the whole document
  
- 
+       // Scroll the whole document
+        $('#box-links').localScroll({
+           target:'body'
+        });
         // Scroll the content inside the #scroll-container div
         $('#small-box-links').localScroll({
            target:'#small-box-container'
