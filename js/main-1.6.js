@@ -11,12 +11,7 @@ $(function() {
  //$('figure.responsive-image').picture();
 
 //$.scrollTo( 3500, 2000 );
-console.log("scrolled 007");
-
-$.scrollTo('#events',{
-					duration: 1000,
-					offset: { 'left':0, 'top':-0.12*$(window).height() }
-				});
+console.log("scrolled 006");
 
 });
 
@@ -24,8 +19,6 @@ $.scrollTo('#events',{
 $(function() {
 
 
-	var navigation_links = $("#nav ul li a");
-	/*
 	var nav_container = $(".header-container");
 	var nav = $("#nav");
 	
@@ -34,7 +27,7 @@ $(function() {
 
 	
 	var sections = $("section");
-//	var navigation_links = $("#nav ul li a");
+	var navigation_links = $("#nav ul li a");
 	
 	sections.waypoint(function(direction) {
 		
@@ -77,12 +70,11 @@ $(function() {
 		{
 		offset:'30%'
 	})
-*/
 	
 	
 	navigation_links.click( function(event) {
 
-/*
+
 			if ($(window).width() < 580)
 		{
 			$.scrollTo(
@@ -106,18 +98,9 @@ $(function() {
 		);
 		}
 
-		else */
+		else 
 			{
-console.log("scroll 0.002");
-	/*	console.log("on click");
-		console.log($(window).width());
-		console.log($(window).height());
-		console.log($(this).attr("href"));*/
-			$($(this).attr("href")).scrollTo({duration: 1000});
-		
-console.log("scrollTo it 0.002");
 
-/*
 
 			$.scrollTo(
 				$(this).attr("href"),
@@ -127,7 +110,6 @@ console.log("scrollTo it 0.002");
 				},
 				{'axis':'y'}
 			);
-*/
 			}
 		event.preventDefault();
 	});
