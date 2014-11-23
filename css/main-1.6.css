@@ -400,9 +400,12 @@ section h2 {
 
 .column {
     float: none;
-    width: 100%;
+    width: 98%;
     padding: 0;
     margin: 0;
+
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .column p {
     font-size: 1em;
@@ -697,8 +700,36 @@ box-sizing: border-box;
     }
 
 
+@media only screen and (min-width: 680px) {
+
+    .photosection
+{
+
+        background-color:transparent;
+        height: 500px;
+}
+.Savephotosection
+{
+
+        background-color:transparent;
+        height: 480px;
+}
+
+}
+
+
 @media only screen and (min-width: 980px) {
 
+
+.column.left{
+
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.column.right{
+    padding-left: 0px;
+    padding-right: 0px;
+}
     .photosection
 {
 
@@ -761,7 +792,7 @@ box-sizing: border-box;
 
 
 
-@media only screen and (min-width: 1144px) {
+@media only screen and (min-width: 980px) {
 .photosection
 {
 
@@ -786,6 +817,9 @@ box-sizing: border-box;
     width: 800px;
     height: 450px;
 }
+
+
+
 }
 
 @media only screen and (min-width: 1153px) {
@@ -1185,6 +1219,38 @@ box-sizing: border-box;
 
 
 
+@media only screen and (max-width: 980px) {
+
+.responsive-image.proposal {
+    text-align: center;
+    margin: 60px auto 60px auto;
+}
+.responsive-image.proposal img {
+    border: 10px solid #090909;
+    width:600px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+
+    .photosection
+{
+
+        background-color:transparent;
+        height: 540px;
+}
+
+.Savephotosection
+{
+
+        background-color:transparent;
+        height: 520px;
+}
+
+}
 
 @media only screen and (max-width: 700px) {
 
@@ -1327,6 +1393,7 @@ section h2 {
     font-size: 1em;
     line-height: 145%;
     padding: 0;
+
 }
 
 
