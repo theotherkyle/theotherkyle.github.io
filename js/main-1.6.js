@@ -29,7 +29,7 @@ $(function() {
  //$('figure.responsive-image').picture();
 
 //$.scrollTo( 3500, 2000 );
-console.log("scrolled 003");
+console.log("scrolled 005");
 
 });
 
@@ -126,7 +126,7 @@ console.log("scroll 0.002");
 		console.log($(window).width());
 		console.log($(window).height());
 		console.log($(this).attr("href"));*/
-			$('#accomodations').ScrollTo();
+			$($(this).attr("href")).ScrollTo({duration: 1000});
 		
 console.log("scrollTo it 0.002");
 
