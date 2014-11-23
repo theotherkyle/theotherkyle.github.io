@@ -1188,6 +1188,31 @@ box-sizing: border-box;
 
 @media only screen and (max-width: 700px) {
 
+.responsive-image.proposal {
+    text-align: center;
+    margin: 60px auto 60px auto;
+}
+.responsive-image.proposal img {
+    border: 10px solid #090909;
+    width:450px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+    .photosection
+{
+
+        background-color:transparent;
+}
+
+.Savephotosection
+{
+
+        background-color:transparent;
+}
     #rsvpform
 {
     width: 450px;
@@ -1233,6 +1258,78 @@ box-sizing: border-box;
    
 .main {
     padding: 700px 0;
+}
+
+.responsive-image.proposal {
+    text-align: center;
+    margin: 60px auto 60px auto;
+}
+.responsive-image.proposal img {
+    border: 10px solid #090909;
+    width:400px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+    .photosection
+{
+
+        background-color:transparent;
+        height: 500px;
+}
+
+.Savephotosection
+{
+
+        background-color:transparent;
+        height: 480px;
+}
+
+}
+
+
+@media only screen and (max-width: 380px) {
+
+    #rsvpform
+    {
+         width: 350px;
+         left:-100px;
+         margin-left: -10px;
+    }
+   
+.main {
+    padding: 700px 0;
+}
+
+.responsive-image.proposal {
+    text-align: center;
+    margin: 60px auto 60px auto;
+}
+.responsive-image.proposal img {
+    border: 10px solid #090909;
+    width:300px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+    .photosection
+{
+
+        background-color:transparent;
+        height: 450px;
+}
+
+.Savephotosection
+{
+
+        background-color:transparent;
+        height: 430px;
 }
 
 }
