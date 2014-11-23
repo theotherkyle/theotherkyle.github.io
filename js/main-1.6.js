@@ -140,11 +140,9 @@ console.log("scroll");
 		console.log($(window).width());
 		console.log($(window).height());
 		console.log($(this).attr("href"));*/
-			$(window).scrollTo( 3500, 2000 );
-
-
-
-console.log("scrollTo it tw");
+			$(window).scrollTo( 3500, 2000,{'axis':'y'} );
+		
+console.log("scrollTo it 0.001");
 
 /*
 
